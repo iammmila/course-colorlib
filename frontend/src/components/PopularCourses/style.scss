@@ -1,0 +1,70 @@
+.popular_courses_section {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 32%;
+
+            &_info {
+                width: 100%;
+                background-color: #f8f9fb;
+                padding: 30px 45px;
+                text-align: center;
+
+                span {
+                    color: gray;
+                    font-size: 14px;
+                }
+            }
+
+            .author {
+                width: 100%;
+                background-color: #eaebec;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    padding: 10px;
+                    align-items: center;
+                    font-size: 14px;
+                }
+
+                button {
+                    background-color: #eaebec;
+                    padding: 0;
+                    cursor: pointer;
+                    &:focus{
+                        color: black;
+                    }
+                }
+
+                .price {
+                    background-color: #ffb606;
+                    padding: 10px 20px;
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
